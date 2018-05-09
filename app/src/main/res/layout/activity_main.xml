@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/manHinh"
+    android:background="@drawable/bg"
+    tools:context="com.example.thuybinh.game_ailatrieuphu.MainActivity">
+
+    <Button
+        android:id="@+id/btnBatDau"
+        android:layout_width="@dimen/size240dp"
+        android:layout_height="@dimen/size50dp"
+        android:text="Bắt đầu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size240dp"
+        android:background="@drawable/answer_panel_yellow"
+        android:onClick="startGame"/>
+    <Button
+        android:id="@+id/btnBangDiem"
+        android:layout_width="@dimen/size240dp"
+        android:layout_height="@dimen/size50dp"
+        android:text="Bảng điểm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/answer_panel_yellow"
+        android:layout_below="@+id/btnBatDau"
+        android:onClick="abc"/>
+    <Button
+        android:id="@+id/btnHuongDan"
+        android:layout_width="@dimen/size240dp"
+        android:layout_height="@dimen/size50dp"
+        android:text="Hướng dẫn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/answer_panel_yellow"
+        android:layout_below="@+id/btnBangDiem"
+        android:onClick="huongDan"/>
+    <Button
+        android:id="@+id/btnThongTin"
+        android:layout_width="@dimen/size240dp"
+        android:layout_height="@dimen/size50dp"
+        android:text="Thông tin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/answer_panel_yellow"
+        android:layout_below="@id/btnHuongDan"/>
+    <ImageView
+        android:id="@+id/imgSound"
+        android:layout_width="@dimen/size50dp"
+        android:layout_height="@dimen/size50dp"
+        android:src="@drawable/soundbutton"
+        android:layout_below="@id/btnThongTin"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginRight="@dimen/size320dp"
+        android:layout_marginTop="@dimen/size20dp"
+        />
+
+</RelativeLayout>
